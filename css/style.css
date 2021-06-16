@@ -1,7 +1,8 @@
 body {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  background-color:#14131a;
+   background: url("../img/blood.png") ,
+    #14131a url("../img/background.jpg") no-repeat center center / 100%;
 }
 img {
   max-width: 100%;
@@ -218,10 +219,7 @@ color: rgba(255, 255, 255, 0.8);
     background: url("../img/blood.png") ,
     #14131a url("../img/background.jpg") no-repeat center center / 100%;
   }
-  .venom {
-    top: 10%;
-    display: none;
-  }
+  
 
 }
 @media (max-width: 576px) {
