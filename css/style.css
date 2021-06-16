@@ -96,7 +96,7 @@ img {
 }
 .content {
   display: flex;
-
+background: url("../img/blood.png")  ;
 }
 .col {
   flex-basis: 50%;
@@ -150,9 +150,10 @@ margin-bottom: 20px;
   height: 45px;
   border-radius: 50%;
   border: none;
+  background:#fff;
 }
 .trailer .play-icon {
-transform: translate(1px, 3px);
+transform: translate(15px, 15px);
 cursor: pointer;
 }
 .poster-wrapper {
@@ -187,19 +188,45 @@ color: rgba(255, 255, 255, 0.8);
 .menu-close {
   display: none;
 }
+.actors {
+  display: flex;
+  background: url("../img/blood.png") ;
+}
+.actors-list {
+  list-style: none;
+  margin-right: 20%;
+}
+.actors-list-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+      margin-top: 20px;
 
+}
+.actors-name {
+  text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+.actors-img {
+  width: 150px;
+  height: 200px;
+}
 
 @media (max-width: 768px) {
   .blood {
-    background: #14131a;
+    background: url("../img/blood.png") ,
+    #14131a url("../img/background.jpg") no-repeat center center / 100%;
   }
   .venom {
     top: 10%;
+    display: none;
   }
+
 }
 @media (max-width: 576px) {
   .venom {
-    top: 20%;
+    top: 30%;
     width: 30%;
   }
   .nav-menu {
@@ -208,7 +235,8 @@ color: rgba(255, 255, 255, 0.8);
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #fff ;
+    background: url("../img/Group.jpg") ;
     z-index: 9;
     display: flex;
     justify-content: center;
@@ -222,6 +250,7 @@ color: rgba(255, 255, 255, 0.8);
     margin-bottom: 2%;
     margin-top: 2%;
     margin-right: 0;
+
   }
   .menu-close {
     opacity: 0;
@@ -232,7 +261,7 @@ color: rgba(255, 255, 255, 0.8);
     align-items:center;
     z-index: 10;
     border: none;
-    background-color: #fff;
+    background: #fff;
     cursor: pointer;
     transform: translateX(300%);
     transition: transform 0.2s;
@@ -246,7 +275,13 @@ color: rgba(255, 255, 255, 0.8);
     margin-right: 10px;
   }
   .nav-menu-link {
-    color:#14131a;
+    background: #ff6347ad;
+    color: #14131a;
+    font-size: 25px;
+    font-weight: bold;
+    border: double #7a1010;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     
   }
   .nav {
@@ -293,6 +328,11 @@ color: rgba(255, 255, 255, 0.8);
   .column-2{
     column-count: 1;
   }
+  .actors{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -308,5 +348,10 @@ color: rgba(255, 255, 255, 0.8);
   }
   .film {
     margin-top: 20%;
+  }
+}
+@media (max-width: 950px) {
+  .actors-list {
+    margin-right: 10%;
   }
 }
