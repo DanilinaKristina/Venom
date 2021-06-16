@@ -277,10 +277,10 @@ color: rgba(255, 255, 255, 0.8);
   .nav-menu-link {
     background: #ff6347ad;
     color: #14131a;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     border: double #7a1010;
-    border-radius: 20%;
+
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     
   }
