@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Venom</title>
+  <title>Главная-Venom 2</title>
 </head>
 <body class="blood">
   <div class="continer">
@@ -17,6 +17,16 @@
         <img width="46" height="71" src="img/logo.png" alt="Logo" class="logo-image">
       </a>
       <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">меню</span>
+          <img src="img/menu-icon.svg" alt="Menu icon" class="menu-button-icon">
+        </button>
+        <!-- /.menu-button -->
+        <button class="menu-close">
+          <span class="menu-close-text">закрыть</span>
+          <img src="img/arrow.svg" alt="MENU close icon" class="menu-close-icon">
+        </button>
+        <!-- /.menu-close -->
         <ul class="nav-menu">
           <li class="nav-menu-item"><a href="about.html" class="nav-menu-link">о фильме</a></li>
           <li class="nav-menu-item"><a href="treler.html" class="nav-menu-link">трейлер</a></li>
@@ -32,12 +42,12 @@
         <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
       </div>
       <!-- /.hero-text -->
-    </div>
+    
     <div class="button-group">
-      <button class="button button-primory">
+      <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primory">
         <img width="15" src="img/play.svg" alt="icon: play" class="button-icon">
         <span class="button-text">смотреть трейлер</span>
-    </button>
+    </a>
       <!-- /.button button-primory -->
       <a href="trailer.html" class="button button-link">
         <img width="15" src="img/ticket.svg" alt="icon: ticket" class="button-icon">
@@ -49,5 +59,9 @@
   </div>
   <!-- /.continer -->
   <img src="img/venom.png" alt="photo: venom" class="venom">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
